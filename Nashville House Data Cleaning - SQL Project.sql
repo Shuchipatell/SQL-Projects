@@ -12,15 +12,6 @@ From [portfolio project]..NashvilleHousing
 -- Standardize Date Format
 
 
-Select saleDate, CONVERT(Date,SaleDate)
-From [portfolio project]..NashvilleHousing
-
-
-Update [portfolio project]..NashvilleHousing
-SET SaleDate = CONVERT(Date,SaleDate)
-
--- If it doesn't Update properly
-
 ALTER TABLE [portfolio project]..NashvilleHousing
 Add SaleDateConverted Date;
 
